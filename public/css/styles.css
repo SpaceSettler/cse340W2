@@ -4,3 +4,114 @@
 *:after {
   box-sizing: border-box;
 }
+@media screen and (min-width: 666px) {
+  body {
+    background-image: url("/images/site/checkerboard.jpg");
+    padding: 0px 7% 0px 7%;
+  }
+
+  #content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #featured {
+    background-image: url("/images/vehicles/delorean.jpg");
+  }
+}
+
+@media screen and (max-width: 666px) {
+  #featured {
+    background-image: url("/images/vehicles/delorean-tn.jpg");
+  }
+}
+
+#wrapper {
+  background-color: white;
+  border: solid lightblue 10px;
+}
+
+header {
+  height: 40px;
+}
+
+.siteName {
+  float: left;
+  font-size: x-large;
+  padding: 10px 5px;
+}
+
+.siteName a {
+  color: black;
+  text-decoration: none;
+}
+
+#tools {
+  float: right;
+  font-size: large;
+  padding: 15px 10px 0px 0px;
+}
+
+#tools a {
+  color: black;
+  text-decoration: none;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  background-color: black;
+  color: white;
+  height: 40px;
+  padding: 10px 40px;
+}
+
+#featured {
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 300px;
+}
+
+#featured-side {
+  position: absolute;
+  background-color: rgba(205, 205, 205, 0.3);
+  left: 10%;
+  top: 50px;
+  color: blue;
+}
+
+.button {
+  background-color: lightskyblue;
+  outline: blue 1px solid;
+  color: black;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+
+
+#content, #part {
+  padding: 20px 20px 20px 20px;
+}
+
+#upgrades {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+#upgrades .button {
+  height: 100px;
+  width: 125px
+}
+
+#part a {
+  display: block;
+}
