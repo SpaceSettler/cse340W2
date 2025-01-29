@@ -98,7 +98,7 @@ nav ul {
 
 
 
-#content, #part {
+#content, .part {
   padding: 20px 20px 20px 20px;
 }
 
@@ -112,6 +112,6 @@ nav ul {
   width: 125px
 }
 
-#part a {
+.part a {
   display: block;
 }
