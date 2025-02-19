@@ -18,11 +18,34 @@
   #featured {
     background-image: url("/images/vehicles/delorean.jpg");
   }
+
+  .smaller {
+    content-visibility: hidden;
+  }
+  
+  .bigger {
+    content-visibility: visible;
+    max-width: 60%;
+    height: max-content;
+  }
+
+  #inv-display_single {
+    display: flex;
+  }
 }
 
 @media screen and (max-width: 666px) {
   #featured {
     background-image: url("/images/vehicles/delorean-tn.jpg");
+  }
+
+  .bigger {
+    content-visibility: hidden;
+  }
+  
+  .smaller {
+    content-visibility: visible;
+    min-width: 40%;
   }
 }
 
@@ -64,7 +87,7 @@ nav ul {
   background-color: black;
   color: white;
   height: 40px;
-  padding: 10px 40px;
+  padding: 10px 5%;
 }
 
 #featured {
@@ -114,4 +137,12 @@ nav ul {
 
 .part a {
   display: block;
+}
+
+#inv-display_single p {
+  padding-right: 20px;
+}
+
+.namePrice {
+  padding-left: 1%;
 }
