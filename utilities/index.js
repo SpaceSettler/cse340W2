@@ -37,10 +37,10 @@ Util.buildClassificationGrid = async function (data) {
              <span>$${new Intl.NumberFormat('en-US').format(vehicle.inv_price)}</span>
              </div></li>`
         })
-        grid += '</ul>'
     } else {
-        grid =+ '<p class="notice">Sorry, no matching vehicles could be found.</p>'
+        grid =+ '<li class="notice">Sorry, no matching vehicles could be found.</li>'
     }
+    grid += '</ul>'
     return grid
 }
 
